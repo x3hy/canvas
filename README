@@ -2,15 +2,23 @@ This is a stock version of dwm that includes the "canvas" mode seen in
 vxwm. vxwm is built on dwm. Generate a patch below, the patch will add
 the canvas mode and show the coordinates of the canvas in the dwmbar.
 
-To generate the patch file do the following:
+I've provided a canvas.patch file which you can download to your dwm
+build. To instead generate the patch file do the following:
+git clone https://git.suckless.org/dwm
+rm .git
+mv dwm/.git .
+rm dwm
 git diff > canvas.diff
 
-then move the canvas.diff file to your dwm folder and run
+Then once you have the canvas.diff file (either from generating it
+yourself or downloading the pre-made one, you can now run the following:
 patch -F3 -i canvas.diff
 
-recompile dwm (don't forget to cat config.def.h > config.h) and it should work fine.
+Recompile dwm (don't forget to cat config.def.h > config.h) and it
+should work fine. Check your dwm config.def.h file for the default
+keybinds.
 
-go see:
+Again, this feature was taken directly from vxwm, which is a DWM fork
+that comes with patch management and a canvas mode, so for more details
+please go and review the code or changes in vxwm:
 https://codeberg.org/wh1tepearl/vxwm
-
-for more details.
