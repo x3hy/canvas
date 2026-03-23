@@ -1,0 +1,12 @@
+To generate the patch file do the following:
+git diff > canvas.diff
+
+then move the canvas.diff file to your dwm folder and run
+patch -F3 -i canvas.diff
+
+recompile dwm (don't forget to cat config.def.h > config.h) and it should work fine.
+
+go see:
+https://codeberg.org/wh1tepearl/vxwm
+
+for more details.
