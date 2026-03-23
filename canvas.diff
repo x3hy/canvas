@@ -466,7 +466,3 @@ index 0000000..adcb69e
 +static void save_canvas_positions(Monitor *m);
 +static void restore_canvas_positions(Monitor *m);
 +static void centerwindow(const Arg *arg);
-diff --git a/util.o b/util.o
-new file mode 100644
-index 0000000..34da63d
-Binary files /dev/null and b/util.o differ
