@@ -1,3 +1,7 @@
+This is a stock version of dwm that includes the "canvas" mode seen in
+vxwm. vxwm is built on dwm. Generate a patch below, the patch will add
+the canvas mode and show the coordinates of the canvas in the dwmbar.
+
 To generate the patch file do the following:
 git diff > canvas.diff
 
